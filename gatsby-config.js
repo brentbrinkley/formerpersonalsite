@@ -1,11 +1,13 @@
 module.exports = {
+  // stuff for site wide data goes here
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `coming soon`,
+    author: `Brent Brinkley`,
+    description: `updated fancy personal site`,
+    siteUrl: `https://www.brentbrinkley.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `16bitsensei`,
+      linkedin: `brent-brinkley-21932435`,
     },
   },
   plugins: [
