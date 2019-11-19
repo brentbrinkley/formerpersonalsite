@@ -3,12 +3,12 @@ module.exports = {
   siteMetadata: {
     title: `coming soon`,
     author: `Brent Brinkley`,
+    jobTitle: `Full Stack Developer`,
     description: `updated fancy personal site`,
     siteUrl: `https://www.brentbrinkley.com/`,
-    social: {
-      twitter: `16bitsensei`,
-      linkedin: `brent-brinkley-21932435`,
-    },
+    github: `brentbrinkley`,
+    twitter: `16bitsensei`,
+    linkedin: `brent-brinkley-21932435`,
   },
   plugins: [
     {
@@ -71,11 +71,5 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
   ],
 }
