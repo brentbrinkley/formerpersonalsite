@@ -3,12 +3,29 @@ module.exports = {
   siteMetadata: {
     title: `coming soon`,
     author: `Brent Brinkley`,
-    jobTitle: `Full Stack Developer`,
+    jobTitle: `Full Stack Engineer`,
     description: `updated fancy personal site`,
     siteUrl: `https://www.brentbrinkley.com/`,
-    github: `brentbrinkley`,
-    twitter: `16bitsensei`,
-    linkedin: `brent-brinkley-21932435`,
+    github: `https://github.com/brentbrinkley`,
+    twitter: `https://twitter.com/16bitSensei`,
+    linkedin: `https://www.linkedin.com/in/brent-brinkley-21932435/`,
+    technologies: [
+      "JavaScript",
+      "Ruby",
+      "Python",
+      "Clojure",
+      "PHP",
+      "Haskell",
+      "Node",
+      "React",
+      "Vue",
+      "Elm",
+      "Rails",
+      "Django",
+      "Laravel",
+      "SQL",
+      "GraphQL",
+    ],
   },
   plugins: [
     {
@@ -23,6 +40,20 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/projects`,
+        name: `projects`,
       },
     },
     {
@@ -71,5 +102,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
   ],
 }

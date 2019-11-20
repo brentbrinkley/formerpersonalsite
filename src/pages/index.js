@@ -1,11 +1,15 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
 import ProfileCard from "../components/ProfileCard"
+import SocialLinks from "../components/SocialLinks"
+import Projects from "../components/Projects"
+import "./main.scss"
 
 const BlogIndex = props => {
   return (
-    <div>
+    <div className="container">
       <ProfileCard />
+      <SocialLinks />
+      <Projects />
     </div>
   )
 }
