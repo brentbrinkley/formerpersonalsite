@@ -27,9 +27,8 @@ const ProfileCard = () => {
       <h1>{data.author}</h1>
       <h2>{data.jobTitle}</h2>
       <p>
-        Hi I'm Brent I'm a Full Stack Web Developer. This site is currently
-        under active development. Check back periodically to see my work in
-        progress.
+        Hi I'm Brent I'm a Full Stack Web Developer. I'm currently revamping my
+        personal site. Check back periodically to see my work in progress!
       </p>
     </div>
   )
