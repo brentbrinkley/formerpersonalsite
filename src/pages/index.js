@@ -4,7 +4,7 @@ import SocialLinks from "../components/SocialLinks"
 import Projects from "../components/Projects"
 import "./main.scss"
 
-const BlogIndex = props => {
+const BlogIndex = () => {
   return (
     <div className="container">
       <ProfileCard />

@@ -5,35 +5,25 @@ const Projects = () => {
   const graphData = useStaticQuery(graphql`
     query ProjectQuery {
       allMarkdownRemark {
-        group(field: frontmatter___Project_Url) {
-          edges {
-            node {
-              id
-              frontmatter {
-                Project_Url
-                description
-                image
-                title
-              }
-            }
+        nodes {
+          frontmatter {
+            Project_Url
+            description
+            image
+            title
           }
         }
       }
     }
   `)
-  const projects = graphData.allMarkdownRemark.group.node
+  const projects = graphData.allMarkdownRemark.nodes.frontmatter
 
   console.log(projects)
 
   return (
     <div>
       <h3>Projects:</h3>
-      <ul>
-        <li>New Kind</li>
-        <li>Raleigh Little Theater</li>
-        <li>Johnny Folsom 4</li>
-        <li>Notes</li>
-      </ul>
+      <p>Being Added Soon</p>
     </div>
   )
 }
