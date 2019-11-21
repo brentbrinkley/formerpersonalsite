@@ -33,7 +33,7 @@ const ProfileCard = () => {
       <p>
         Hi I'm Brent I'm a Full Stack Web Developer. I'm currently revamping my
         personal site in real time because I'm a mad man. Check back
-        periodically to see my work in progress!
+        periodically to see my work in progress.
       </p>
     </div>
   )
