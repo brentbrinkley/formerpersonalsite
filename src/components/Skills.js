@@ -17,7 +17,7 @@ const Skills = () => {
 
   return (
     <div>
-      <h3>Technologies I have experience with:</h3>
+      <h3>Technologies I speak:</h3>
       <ul className="skill-grid">
         {tech.map(item => (
           <span className="skill-item">
@@ -26,12 +26,12 @@ const Skills = () => {
                 display: "inline-block",
                 width: "10px",
                 height: "10px",
-                backgroundColor: "#fe5555",
+                backgroundColor: item[1],
                 borderRadius: "50px",
                 marginRight: "10px",
               }}
             ></span>
-            <li>{item}</li>
+            <li>{item[0]}</li>
           </span>
         ))}
       </ul>

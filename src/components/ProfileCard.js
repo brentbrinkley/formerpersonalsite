@@ -27,16 +27,24 @@ const ProfileCard = () => {
   // JSX
   //----------------------------------------
   return (
-    <div className="card">
-      <ProfileImage />
-      <h1>{data.author}</h1>
-      <h2>{data.jobTitle}</h2>
-      <SocialLinks />
-      <p>
-        Hi I'm Brent I'm a Full Stack Web Developer. I'm currently revamping my
-        personal site in real time because I'm a mad man. Check back
-        periodically to see my work in progress.
-      </p>
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+      }}
+    >
+      <div className="card">
+        <ProfileImage />
+        <h1>{data.author}</h1>
+        <h2>{data.jobTitle}</h2>
+        <SocialLinks />
+        <p>
+          Hi I'm Brent I'm a Full Stack Web Developer. I'm currently revamping
+          my personal site in real time because I'm a mad man. Check back
+          periodically to see my work in progress.
+        </p>
+      </div>
     </div>
   )
 }
