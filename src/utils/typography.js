@@ -8,7 +8,7 @@ lincolnTheme.overrideStyles = () => ({
     textDecoration: "none",
     textShadow: "none",
   },
-  p: {
+  "p,li": {
     fontFamily: "Avenir, Helvetica, Lora",
   },
 })
