@@ -1,7 +1,14 @@
-ul {
-  list-style: none;
-}
-
-a {
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   text-decoration: none;
+  margin: 10px 0;
+
+  a {
+    // text-shadow: none;
+    color: #fe5555;
+    margin: 0 30px;
+    border: none;
+  }
 }

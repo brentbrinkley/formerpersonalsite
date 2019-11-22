@@ -1,15 +1,17 @@
 import React from "react"
+import NavBar from "../components/NavBar"
 import ProfileCard from "../components/ProfileCard"
-import SocialLinks from "../components/SocialLinks"
 import Projects from "../components/Projects"
 import "./main.scss"
 
 const BlogIndex = () => {
   return (
-    <div className="container">
-      <ProfileCard />
-      <SocialLinks />
-      <Projects />
+    <div>
+      <NavBar />
+      <div className="container">
+        <ProfileCard />
+        <Projects />
+      </div>
     </div>
   )
 }

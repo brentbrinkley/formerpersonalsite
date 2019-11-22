@@ -1,5 +1,11 @@
 import React from "react"
 import { useStaticQuery } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faGithub,
+  faTwitter,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons"
 import "./social-links.scss"
 
 const SocialLinks = () => {
@@ -16,21 +22,19 @@ const SocialLinks = () => {
   `)
 
   const data = graphData.site.siteMetadata
+  const size = "lg"
 
   return (
-    <div>
-      <h3>Relevant Social Links:</h3>
-      <ul>
-        <li>
-          <a href={data.github}>Github</a>
-        </li>
-        <li>
-          <a href={data.twitter}>Twitter</a>
-        </li>
-        <li>
-          <a href={data.linkedin}>LinkedIn</a>
-        </li>
-      </ul>
+    <div className="flex-container">
+      <a href={data.github}>
+        <FontAwesomeIcon icon={faGithub} size={size} />
+      </a>
+      <a href={data.twitter}>
+        <FontAwesomeIcon icon={faTwitter} size={size} />
+      </a>
+      <a href={data.linkedin}>
+        <FontAwesomeIcon icon={faLinkedin} size={size} />
+      </a>
     </div>
   )
 }
