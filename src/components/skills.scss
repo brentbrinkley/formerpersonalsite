@@ -1,9 +1,16 @@
-.skillgrid {
+.skill-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
 
-  li {
+  .skill-item {
     align-self: center;
+    padding: 5px;
+    // justify-self: center;
+  }
+
+  li {
+    display: inline;
+    //
   }
 }
