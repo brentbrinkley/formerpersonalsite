@@ -4,7 +4,9 @@ import "./navbar.scss"
 const NavBar = () => {
   return (
     <div className="navbar">
-      <nav>Brent Brinkley</nav>
+      <div className="container">
+        <nav>Brent Brinkley</nav>
+      </div>
     </div>
   )
 }

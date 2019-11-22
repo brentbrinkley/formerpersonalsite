@@ -4,7 +4,7 @@ import ProfileCard from "../components/ProfileCard"
 import Projects from "../components/Projects"
 import "./main.scss"
 
-const BlogIndex = () => {
+const Home = () => {
   return (
     <div>
       <NavBar />
@@ -15,4 +15,4 @@ const BlogIndex = () => {
     </div>
   )
 }
-export default BlogIndex
+export default Home

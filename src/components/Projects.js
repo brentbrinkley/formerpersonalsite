@@ -2,23 +2,23 @@ import React from "react"
 import { useStaticQuery } from "gatsby"
 
 const Projects = () => {
-  const graphData = useStaticQuery(graphql`
-    query ProjectQuery {
-      allMarkdownRemark {
-        nodes {
-          frontmatter {
-            Project_Url
-            description
-            image
-            title
-          }
-        }
-      }
-    }
-  `)
-  const projects = graphData.allMarkdownRemark.nodes.frontmatter
+  // const graphData = useStaticQuery(graphql`
+  //   query ProjectQuery {
+  //     allMarkdownRemark {
+  //       nodes {
+  //         frontmatter {
+  //           Project_Url
+  //           description
+  //           image
+  //           title
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+  // const projects = graphData.allMarkdownRemark.nodes.frontmatter
 
-  console.log(projects)
+  // console.log(projects)
 
   return (
     <div>
