@@ -2,4 +2,4 @@
 
 # Personal Portfolio & Blog
 
-I'm currently building this with Gatsby and Netlify and I'm habing a ton of fun. No structure no design docs just literally freestyling this to see what I can come up with
+I'm currently building this with Gatsby and Netlify and I'm having a ton of fun. No structure no design docs just literally freestyling this to see what I can come up with.
