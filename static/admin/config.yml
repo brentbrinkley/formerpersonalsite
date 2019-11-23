@@ -39,4 +39,4 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: image }
-      - { label: "Url", name: "Project Url", widget: "string" }
+      - { label: "Url", name: "url", widget: "string" }
