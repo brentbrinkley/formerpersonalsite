@@ -1,0 +1,28 @@
+.projects {
+  padding: 40px 0;
+  // background-color: white;
+  width: 100vw;
+  // box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
+}
+
+.cube {
+  background-color: cornflowerblue;
+  position: relative;
+  color: white;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
+
+  .cube-header {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .cube-num {
+    font-family: "arial";
+    font-size: 3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

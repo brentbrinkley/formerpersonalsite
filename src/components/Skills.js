@@ -16,7 +16,7 @@ const Skills = () => {
   const tech = graphData.site.siteMetadata.technologies
 
   return (
-    <div>
+    <div className="container">
       <h3>Technologies I speak:</h3>
       <ul className="skill-grid">
         {tech.map(item => (

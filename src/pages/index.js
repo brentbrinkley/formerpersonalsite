@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="container">
+      <div>
         <ProfileCard />
         <Projects />
         <Skills />

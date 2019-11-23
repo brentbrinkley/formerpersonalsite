@@ -34,7 +34,7 @@ const ProfileCard = () => {
         alignItems: "center",
       }}
     >
-      <div className="card">
+      <div className="card container">
         <ProfileImage />
         <h1>{data.author}</h1>
         <h2>{data.jobTitle}</h2>
