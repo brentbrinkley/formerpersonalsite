@@ -13,7 +13,9 @@ const Projects = () => {
             frontmatter {
               title
               description
-              Project_Url
+              url
+              color
+              number
             }
           }
         }
@@ -23,22 +25,36 @@ const Projects = () => {
 
   const data = graphData.allMarkdownRemark.edges
 
+  // ---------------------------------------
+  // The values from graphql are returned
+  // asynchronusly. So we sort the data
+  // before passing it into our jsx
+  //----------------------------------------
+  const sortedData = data.sort((a, b) => {
+    return a.node.frontmatter.number - b.node.frontmatter.number
+  })
+
+  // ---------------------------------------
+  // JSX start
+  //----------------------------------------
   return (
-    <div className="projects">
-      <div className="container">
+    <div>
+      <div className="">
         <h2>Projects:</h2>
-        <div className="cube">
-          <div className="cube-header">New Kind</div>
-          <div className="bar"></div>
-          <div className="cube-num">01</div>
-        </div>
-        {/*}   {data.map(item => (
-      <div>
-        <h3>{item.node.frontmatter.title}</h3>
-        <p>{item.node.frontmatter.description}</p>
-        <a href={item.node.frontmatter.Project_Url}>New Kind's Site</a>
       </div>
-    ))}{*/}
+      <div className="projects">
+        {sortedData.map(item => (
+          <a href={item.node.frontmatter.url}>
+            <div
+              className="cube"
+              style={{ backgroundColor: `#${item.node.frontmatter.color}` }}
+            >
+              <div className="cube-header">{item.node.frontmatter.title}</div>
+              <div className="bar"></div>
+              <div className="cube-num">{item.node.frontmatter.number}</div>
+            </div>
+          </a>
+        ))}
       </div>
     </div>
   )

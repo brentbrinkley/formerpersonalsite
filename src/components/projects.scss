@@ -1,12 +1,14 @@
 .projects {
   padding: 40px 0;
-  // background-color: white;
   width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  // background-color: white;
   // box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
 }
 
 .cube {
-  background-color: cornflowerblue;
   position: relative;
   color: white;
   width: 200px;
