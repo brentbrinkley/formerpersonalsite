@@ -29,6 +29,7 @@ const Projects = () => {
         <h2>Projects:</h2>
         <div className="cube">
           <div className="cube-header">New Kind</div>
+          <div className="bar"></div>
           <div className="cube-num">01</div>
         </div>
         {/*}   {data.map(item => (

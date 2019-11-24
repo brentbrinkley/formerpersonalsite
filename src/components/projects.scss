@@ -14,8 +14,19 @@
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
 
   .cube-header {
+    font-family: "Avenir";
     position: absolute;
     bottom: 0;
+    padding-left: 10px;
+  }
+
+  .bar {
+    position: absolute;
+    background-color: white;
+    width: 70px;
+    height: 5px;
+    top: 75px;
+    right: 0;
   }
 
   .cube-num {
