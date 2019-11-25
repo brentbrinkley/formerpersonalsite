@@ -27,13 +27,7 @@ const ProfileCard = () => {
   // JSX
   //----------------------------------------
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        alignItems: "center",
-      }}
-    >
+    <div className="card-section">
       <div className="card container">
         <ProfileImage />
         <h1>{data.author}</h1>

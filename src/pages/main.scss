@@ -6,3 +6,10 @@
 body {
   background-color: #eae8e6;
 }
+
+@media (max-width: 599px) {
+  .container {
+    max-width: 100%;
+    margin: 0;
+  }
+}

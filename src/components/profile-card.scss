@@ -1,3 +1,9 @@
+.card-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 .card {
   // background-color: #fe5555;
   background-color: white;
@@ -31,5 +37,14 @@
   p {
     margin: auto;
     max-width: 85%;
+  }
+}
+
+@media (max-width: 599px) {
+  .card-section {
+    height: inherit;
+  }
+  .card {
+    border-radius: 0;
   }
 }

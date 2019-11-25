@@ -39,3 +39,8 @@
     right: 0;
   }
 }
+@media (max-width: 599px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
