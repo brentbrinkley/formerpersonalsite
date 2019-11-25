@@ -13,3 +13,10 @@ body {
     margin: 0;
   }
 }
+
+@media (max-width: 840px) and (min-width: 600px) {
+  .container {
+    max-width: 100%;
+    margin: 0;
+  }
+}

@@ -11,7 +11,7 @@
   border-radius: 20px;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
   max-width: 940px;
-  max-height: 600px;
+  // max-height: 600px;
   margin: 100px auto;
 
   h1 {
@@ -46,5 +46,16 @@
   }
   .card {
     border-radius: 0;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 840px) and (min-width: 600px) {
+  .card-section {
+    height: inherit;
+  }
+  .card {
+    border-radius: 0;
+    height: 100vh;
   }
 }
