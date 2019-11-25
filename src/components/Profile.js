@@ -1,10 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import ProfileImage from "./ProfileImage"
-import "./profile-card.scss"
+import "./profile.scss"
 import SocialLinks from "./SocialLinks"
 
-const ProfileCard = () => {
+const Profile = () => {
   // ---------------------------------------
   // Snag our graph data from gatsby config
   // Set shorter constants
@@ -27,8 +27,8 @@ const ProfileCard = () => {
   // JSX
   //----------------------------------------
   return (
-    <div className="card-section">
-      <div className="card container">
+    <div className="profile-section">
+      <div className="profile container">
         <ProfileImage />
         <h1>{data.author}</h1>
         <h2>{data.jobTitle}</h2>
@@ -43,4 +43,4 @@ const ProfileCard = () => {
   )
 }
 
-export default ProfileCard
+export default Profile

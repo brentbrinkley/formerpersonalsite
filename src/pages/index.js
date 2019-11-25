@@ -1,6 +1,7 @@
 import React from "react"
+import Card from "../components/Card"
 import Navbar from "../components/NavBar"
-import ProfileCard from "../components/ProfileCard"
+import Profile from "../components/Profile"
 import Projects from "../components/Projects"
 import Skills from "../components/Skills"
 import "./main.scss"
@@ -8,11 +9,16 @@ import "./main.scss"
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <div>
-        <ProfileCard />
+        <Card>
+          <Navbar />
+          <Profile />
+          <Projects />
+          <Skills />
+        </Card>
+        {/*<ProfileCard />
         <Projects />
-        <Skills />
+        <Skills /> */}
       </div>
     </div>
   )
