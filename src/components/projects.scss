@@ -14,6 +14,7 @@
   width: 200px;
   height: 200px;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
+  margin-bottom: 50px;
 
   .cube-header {
     font-family: "Avenir";
@@ -42,5 +43,11 @@
 @media (max-width: 599px) {
   .projects {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 840px) and (min-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
