@@ -8,18 +8,13 @@ import "./main.scss"
 
 const Home = () => {
   return (
-    <div>
-      <div>
-        <Card>
-          <Navbar />
-          <Profile />
-          <Projects />
-          <Skills />
-        </Card>
-        {/*<ProfileCard />
+    <div className="flex-contain">
+      <Card>
+        <Navbar />
+        <Profile />
         <Projects />
-        <Skills /> */}
-      </div>
+        <Skills />
+      </Card>
     </div>
   )
 }

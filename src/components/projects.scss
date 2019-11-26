@@ -1,8 +1,11 @@
 .projects {
   padding: 40px 0;
-  width: 100vw;
+  margin: 0 auto;
+  width: 80%;
+  // width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
   justify-items: center;
   // background-color: white;
   // box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
@@ -14,7 +17,7 @@
   width: 200px;
   height: 200px;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
 
   .cube-header {
     font-family: "Avenir";
