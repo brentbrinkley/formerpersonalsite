@@ -6,7 +6,7 @@ import {
   faTwitter,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
-import "./social-links.scss"
+import "./SocialLinks.scss"
 
 const SocialLinks = () => {
   const graphData = useStaticQuery(graphql`

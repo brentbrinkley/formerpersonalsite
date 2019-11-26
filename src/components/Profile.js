@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import ProfileImage from "./ProfileImage"
-import "./profile.scss"
+import "./Profile.scss"
 import SocialLinks from "./SocialLinks"
 
 const Profile = () => {
