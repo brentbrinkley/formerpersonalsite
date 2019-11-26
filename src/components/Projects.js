@@ -38,7 +38,7 @@ const Projects = () => {
   // JSX start
   //----------------------------------------
   return (
-    <div>
+    <div className="project-section">
       <div className="container">
         <h2>Projects:</h2>
       </div>
