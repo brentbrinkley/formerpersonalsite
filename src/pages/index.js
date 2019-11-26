@@ -4,12 +4,11 @@ import Navbar from "../components/NavBar"
 import Profile from "../components/Profile"
 import Projects from "../components/Projects"
 import Skills from "../components/Skills"
-import Square from "../components/Square"
 import "./main.scss"
 
 const Home = () => {
   return (
-    <div className="flex-contain">
+    <div className="main">
       <Card>
         <Navbar />
         <Profile />
