@@ -2,22 +2,17 @@ import React from "react"
 import { Link } from "gatsby"
 import "./Navbar.scss"
 
-const Navbar = () => {
+const Navbar = props => {
   return (
     <div className="navbar">
       <div className="container">
         <nav>
-          <Link className="title" to="/">
-            start
+          <Link className="title" to={props.route}>
+            {props.title}
           </Link>
-          {/*<ul className="navlinks">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="">Blog</Link>
-            </li>
-          </ul> */}
+          <Link className="title hidden" to={props.route}>
+            {props.title}
+          </Link>
         </nav>
       </div>
     </div>

@@ -8,20 +8,27 @@
 
   nav {
     font-family: "Avenir";
+    max-width: 80px;
     font-size: 1.5em;
     margin: 0;
     display: flex;
-    align-content: center;
-    justify-content: space-between;
+    flex-direction: column;
+    // align-content: center;
+    // justify-content: space-between;
 
     .title {
       color: white;
       padding: 7px 7px 5px 7px;
       box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
-      // margin: px 0;
-      // border: #fe5555 solid 2px;
       background-color: #fe5555;
       line-height: normal;
+    }
+
+    .hidden {
+      visibility: hidden;
+      :hover {
+        display: block;
+      }
     }
   }
 }

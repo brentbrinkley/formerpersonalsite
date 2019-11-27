@@ -1,21 +1,16 @@
 import React from "react"
-import Card from "../components/Card"
-import Navbar from "../components/NavBar"
+import Layout from "../components/Layout"
 import Profile from "../components/Profile"
 import Projects from "../components/Projects"
 import Skills from "../components/Skills"
-import "./main.scss"
 
 const Home = () => {
   return (
-    <div className="main">
-      <Card>
-        <Navbar />
-        <Profile />
-        <Projects />
-        <Skills />
-      </Card>
-    </div>
+    <Layout route="/blog" navTitle="Start">
+      <Profile />
+      <Projects />
+      <Skills />
+    </Layout>
   )
 }
 export default Home
