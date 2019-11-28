@@ -1,7 +1,7 @@
 import React from "react"
 import Card from "./Card"
 import Navbar from "./Navbar"
-import "./Layout.scss"
+import "./layout.scss"
 
 const Layout = props => {
   return (

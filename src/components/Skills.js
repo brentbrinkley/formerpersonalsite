@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery } from "gatsby"
-import "./Skills.scss"
+import "./skills.scss"
 
 const Skills = () => {
   const graphData = useStaticQuery(graphql`

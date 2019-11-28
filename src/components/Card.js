@@ -1,5 +1,5 @@
 import React from "react"
-import "./Card.scss"
+import "./card.scss"
 import { useSpring, animated } from "react-spring"
 
 const Card = props => {
