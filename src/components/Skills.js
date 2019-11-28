@@ -12,7 +12,7 @@ const Skills = () => {
       }
     }
   `)
-
+  
   const tech = graphData.site.siteMetadata.technologies
 
   return (

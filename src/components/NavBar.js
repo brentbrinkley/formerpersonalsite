@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import "./navbar.scss"
 
-const Navbar = props => {
+const Navbar = props => { 
   return (
     <div className="navbar">
       <div className="container">
