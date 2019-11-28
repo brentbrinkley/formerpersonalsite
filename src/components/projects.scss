@@ -1,0 +1,60 @@
+.projects-section {
+  height: 80%;
+  display: flex;
+  margin-bottom: 4em;
+}
+
+.projects {
+  padding: 40px 0;
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+  justify-items: center;
+}
+
+.cube {
+  position: relative;
+  color: white;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
+  // margin-bottom: 50px;
+
+  .cube-header {
+    font-family: "Avenir";
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+  }
+
+  .bar {
+    position: absolute;
+    background-color: white;
+    width: 70px;
+    height: 5px;
+    top: 75px;
+    right: 0;
+  }
+
+  .cube-num {
+    font-family: "arial";
+    font-size: 3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 840px) and (min-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,19 @@
+.card {
+  position: relative;
+  background-color: white;
+  // box-shadow: 20px 30px 30px 30px rgba(0, 0, 0, 0.068);
+  border-radius: 20px;
+  width: 1200px;
+  height: 800px;
+  // max-height: 100%;
+  margin: 100px auto;
+  overflow: scroll;
+}
+
+@media (max-width: 1280px) {
+  .card {
+    border-radius: 0;
+    height: 100vh;
+    margin: 0;
+  }
+}
