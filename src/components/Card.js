@@ -17,7 +17,7 @@ const Card = props => {
   //   },
   // })
 
-  return <animated.div className="card">{props.children}</animated.div>
+  return <div className="card">{props.children}</div>
 }
 
 export default Card
