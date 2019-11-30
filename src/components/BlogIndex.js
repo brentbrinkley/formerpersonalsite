@@ -25,14 +25,25 @@ const BlogIndex = () => {
     }
   `)
 
-  return (
+  const blogData = data.allMarkdownRemark.edges
+
+  return blogData.length > 0 ? (
     <div className="container">
       <h1>Blog</h1>
       <div>
-        {data.allMarkdownRemark.edges.map(item => (
-          <h1>{item.node.frontmatter.title}</h1>
-        ))}
+        {data.allMarkdownRemark.edges.map(blog => {
+          return (
+            <div>
+              <h1>{blog.node.frontmatter.title}</h1>
+            </div>
+          )
+        })}
       </div>
+    </div>
+  ) : (
+    <div className="container">
+      <h1>Blog</h1>
+      <p>Hello There are no blogs to be found here my G</p>
     </div>
   )
 }
