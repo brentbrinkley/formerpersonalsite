@@ -1,13 +1,13 @@
-import React from "react"
-import Card from "./Card"
-import Navbar from "./Navbar"
-import "./layout.scss"
+import React from 'react'
+import Card from './Card'
+import NavBar from './NavBar'
+import './layout.scss'
 
 const Layout = props => {
   return (
     <div className="main">
       <Card>
-        <Navbar route={props.route} title={props.navTitle} />
+        <NavBar route={props.route} title={props.navTitle} />
         {props.children}
       </Card>
     </div>

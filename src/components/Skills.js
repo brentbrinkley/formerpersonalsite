@@ -1,6 +1,6 @@
-import React from "react"
-import { useStaticQuery } from "gatsby"
-import "./skills.scss"
+import React from 'react'
+import { useStaticQuery } from 'gatsby'
+import './skills.scss'
 
 const Skills = () => {
   const graphData = useStaticQuery(graphql`
@@ -12,7 +12,7 @@ const Skills = () => {
       }
     }
   `)
-  
+
   const tech = graphData.site.siteMetadata.technologies
 
   return (
@@ -24,12 +24,12 @@ const Skills = () => {
             <span className="skill-item">
               <span
                 style={{
-                  display: "inline-block",
-                  width: "10px",
-                  height: "10px",
+                  display: 'inline-block',
+                  width: '10px',
+                  height: '10px',
                   backgroundColor: item[1],
-                  borderRadius: "50px",
-                  marginRight: "10px",
+                  borderRadius: '50px',
+                  marginRight: '10px',
                 }}
               ></span>
               <li>{item[0]}</li>

@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import ProfileImage from "./ProfileImage"
-import SocialLinks from "./SocialLinks"
-import "./profile.scss"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import ProfileImage from './ProfileImage'
+import SocialLinks from './SocialLinks'
+import './profile.scss'
 
 const Profile = () => {
   // ---------------------------------------

@@ -1,6 +1,6 @@
-import React from "react"
-import { useStaticQuery } from "gatsby"
-import "./projects.scss"
+import React from 'react'
+import { useStaticQuery } from 'gatsby'
+import './projects.scss'
 
 const Projects = () => {
   const graphData = useStaticQuery(graphql`

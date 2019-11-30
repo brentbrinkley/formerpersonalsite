@@ -1,6 +1,6 @@
-import React from "react"
-import "./card.scss"
-import { useSpring, animated } from "react-spring"
+import React from 'react'
+import './card.scss'
+import { useSpring, animated } from 'react-spring'
 
 const Card = props => {
   // const fade = useSpring({
