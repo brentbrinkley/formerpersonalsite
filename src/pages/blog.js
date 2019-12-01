@@ -1,10 +1,10 @@
-import React from "react"
-import Layout from "../components/Layout"
-import BlogIndex from "../components/BlogIndex"
+import React from 'react'
+import Layout from '../components/Layout'
+import BlogIndex from '../components/BlogIndex'
 
 const Blog = () => {
   return (
-    <Layout navTitle="Blog">
+    <Layout navTitle="blog">
       <BlogIndex />
     </Layout>
   )

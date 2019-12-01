@@ -2,6 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import ProfileImage from './ProfileImage'
 import SocialLinks from './SocialLinks'
+import BlogButton from './BlogButton'
 import './profile.scss'
 
 const Profile = () => {
@@ -38,6 +39,7 @@ const Profile = () => {
           my personal site in real time because I'm a mad man. Check back
           periodically to see my work in progress.
         </p>
+        <BlogButton></BlogButton>
       </div>
     </div>
   )

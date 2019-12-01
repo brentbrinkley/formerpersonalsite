@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery } from 'gatsby'
+import { useStaticQuery, Link } from 'gatsby'
 
 const BlogIndex = () => {
   const data = useStaticQuery(graphql`
@@ -34,7 +34,10 @@ const BlogIndex = () => {
         {data.allMarkdownRemark.edges.map(blog => {
           return (
             <div>
-              <h1>{blog.node.frontmatter.title}</h1>
+              <Link to={blog.node.fields.slug}>
+                <h1>{blog.node.frontmatter.title}</h1>
+              </Link>
+              <p>{blog.node.frontmatter.description}</p>
             </div>
           )
         })}
