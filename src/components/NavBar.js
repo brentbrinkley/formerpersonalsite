@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import HomeIcon from './../../content/assets/home.svg'
 import './navbar.scss'
 
 const NavBar = props => {
@@ -8,9 +7,13 @@ const NavBar = props => {
     <div className="navbar">
       <div className="container">
         <nav>
-          <Link className="title" to={props.route}>
-            home
-          </Link>
+          <Link className="circle one" activeClassName="toggled" to="/"></Link>
+
+          <Link
+            className="circle two"
+            activeClassName="toggled"
+            to="/blog"
+          ></Link>
         </nav>
       </div>
     </div>
