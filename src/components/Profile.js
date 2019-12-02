@@ -34,9 +34,13 @@ const Profile = () => {
         <h2>{data.jobTitle}</h2>
         <SocialLinks />
         <p>
-          Hi I'm Brent I'm a Full Stack Web Developer. I'm currently revamping
-          my personal site in real time because I'm a mad man. Check back
-          periodically to see my work in progress.
+          Hi I'm Brent I'm a Full Stack Web Developer and designer in Raleigh
+          North Carolina. When I'm not coding I'm either making music or chasing
+          down hard to find retro items.
+        </p>
+        <p style={{ color: '#fe5555' }}>
+          This site is currently under construction so expect rough edges while
+          I bend it to my will.
         </p>
       </div>
     </div>

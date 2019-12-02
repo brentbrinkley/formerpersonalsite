@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 
 export const pageQuery = graphql`
@@ -19,11 +20,13 @@ const BlogPostTemplate = ({ data }) => {
   console.log(blog)
 
   return (
-    <div>
-      <h1>{blog.frontmatter.date}</h1>
-      <h3>{blog.frontmatter.date}</h3>
-      <div dangerouslySetInnerHTML={{ __html: blog.html }}></div>
-    </div>
+    <Layout>
+      <div className="container">
+        <h1>{blog.frontmatter.date}</h1>
+        <h3>{blog.frontmatter.date}</h3>
+        <div dangerouslySetInnerHTML={{ __html: blog.html }}></div>
+      </div>
+    </Layout>
   )
 }
 
