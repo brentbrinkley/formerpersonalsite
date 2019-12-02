@@ -34,7 +34,7 @@ const Profile = () => {
         <h2>{data.jobTitle}</h2>
         <SocialLinks />
         <p>
-          Hi I'm Brent I'm a Full Stack Web Developer and designer in Raleigh
+          Hi I'm Brent I'm a Full Stack Web Developer and Designer in Raleigh
           North Carolina. When I'm not coding I'm either making music or chasing
           down hard to find retro items.
         </p>

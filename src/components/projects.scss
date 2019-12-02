@@ -1,5 +1,5 @@
 .projects-section {
-  height: 80%;
+  height: 100%;
   display: flex;
   margin-bottom: 4em;
 }
@@ -20,10 +20,9 @@
   width: 200px;
   height: 200px;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
-  // margin-bottom: 50px;
 
   .cube-header {
-    font-family: "Avenir";
+    font-family: 'Avenir';
     position: absolute;
     bottom: 0;
     padding-left: 10px;
@@ -39,7 +38,7 @@
   }
 
   .cube-num {
-    font-family: "arial";
+    font-family: 'arial';
     font-size: 3em;
     position: absolute;
     top: 0;

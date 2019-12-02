@@ -2,6 +2,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  margin-bottom: 3em;
 }
 
 .profile {
@@ -29,23 +30,3 @@
     max-width: 85%;
   }
 }
-
-// @media (max-width: 599px) {
-//   .card-section {
-//     height: inherit;
-//   }
-//   .card {
-//     border-radius: 0;
-//     height: 100vh;
-//   }
-// }
-
-// @media (max-width: 840px) and (min-width: 600px) {
-//   .card-section {
-//     height: inherit;
-//   }
-//   .card {
-//     border-radius: 0;
-//     height: 100vh;
-//   }
-// }
