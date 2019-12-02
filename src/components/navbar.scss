@@ -15,28 +15,35 @@ $circle-spacing: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #fe5555;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
 
     .circle {
       margin: 10px 0;
       display: block;
-      background-color: inherit;
       border-radius: 100px;
-      border: 1px solid white;
+      border: 2px solid#fe5555;
       width: $circle-dimensions;
       height: $circle-dimensions;
-      color: white;
+      // background-color: white;
+      box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
+      transition-property: border;
+      transition-duration: 4s;
+      transition-delay: 2s;
     }
+
     .one {
       margin-left: $circle-spacing;
       margin-right: 3px;
     }
+
     .two {
       margin-right: $circle-spacing;
     }
+
     .toggled {
-      background-color: white;
+      border: 12px solid #fe5555;
+      transition-property: border;
+      transition-duration: 4s;
+      transition-delay: 2s;
     }
   }
 }
