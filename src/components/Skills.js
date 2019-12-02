@@ -17,8 +17,8 @@ const Skills = () => {
 
   return (
     <section className="skills-section">
-      <div className="">
-        <h3>Technologies I speak:</h3>
+      <div>
+        <h2>Technologies I speak:</h2>
         <ul className="skill-grid">
           {tech.map(item => (
             <span className="skill-item">

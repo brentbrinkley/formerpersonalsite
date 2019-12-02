@@ -38,7 +38,7 @@ const Projects = () => {
   // JSX start
   //----------------------------------------
   return (
-    <div className="project-section">
+    <section className="project-section">
       <div className="container">
         <h2>Projects:</h2>
       </div>
@@ -56,7 +56,7 @@ const Projects = () => {
           </a>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 
