@@ -1,19 +1,8 @@
-import React from "react"
-import { graphql } from "gatsby"
-
-const BlogPostTemplate = () => {
-  return <h1>Hi There</h1>
-}
-
-export default BlogPostTemplate
+import React from 'react'
+import { graphql } from 'gatsby'
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
@@ -21,8 +10,21 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
       }
     }
   }
 `
+const BlogPostTemplate = ({ data }) => {
+  const blog = data.markdownRemark
+  console.log(blog)
+
+  return (
+    <div>
+      <h1>{blog.frontmatter.date}</h1>
+      <h3>{blog.frontmatter.date}</h3>
+      <div dangerouslySetInnerHTML={{ __html: blog.html }}></div>
+    </div>
+  )
+}
+
+export default BlogPostTemplate
