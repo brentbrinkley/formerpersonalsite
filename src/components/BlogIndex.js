@@ -47,8 +47,8 @@ const BlogIndex = () => {
           </div>
         ) : (
           <p>
-            There are no musings to be found here yet as I'm still renovating
-            the place. Pardon my dust.
+            Your princess is in another cast-... Sorry there are no musings to
+            be found here. I'm still renovating the place. Pardon my dust.
           </p>
         )}
       </div>

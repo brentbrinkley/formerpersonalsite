@@ -38,23 +38,23 @@ const Projects = () => {
   // JSX start
   //----------------------------------------
   return (
-    <section className="project-section">
-      <div className="container">
+    <section className="projects-section">
+      <div>
         <h2>Projects:</h2>
-      </div>
-      <div className="projects">
-        {sortedData.map(item => (
-          <a href={item.node.frontmatter.url}>
-            <div
-              className="cube"
-              style={{ backgroundColor: `#${item.node.frontmatter.color}` }}
-            >
-              <div className="cube-header">{item.node.frontmatter.title}</div>
-              <div className="bar"></div>
-              <div className="cube-num">{item.node.frontmatter.number}</div>
-            </div>
-          </a>
-        ))}
+        <div className="projects">
+          {sortedData.map(item => (
+            <a href={item.node.frontmatter.url}>
+              <div
+                className="cube"
+                style={{ backgroundColor: `#${item.node.frontmatter.color}` }}
+              >
+                <div className="cube-header">{item.node.frontmatter.title}</div>
+                <div className="bar"></div>
+                <div className="cube-num">{item.node.frontmatter.number}</div>
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   )
