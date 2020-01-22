@@ -39,8 +39,8 @@ const Profile = () => {
                     making music or chasing down hard to find retro items.
                 </p>
                 <p style={{ color: '#fe5555' }}>
-                    This site is currently under construction so expect rough
-                    edges while I bend it to my will.
+                    This site is currently in active development so expect rough
+                    edges while I'm working on it.
                 </p>
             </div>
         </div>
