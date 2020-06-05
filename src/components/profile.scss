@@ -1,33 +1,33 @@
 .profile-section {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  margin-bottom: 3em;
-  clear: both;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3em;
+    clear: both;
 }
 
 .profile {
-  h1 {
-    text-align: center;
-    margin-top: 0.5em;
-    margin-bottom: 0;
-  }
+    h1 {
+        text-align: center;
+        margin-top: 0.5em;
+        margin-bottom: 0;
+    }
 
-  h2 {
-    color: #fe5555;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0;
-  }
+    h2 {
+        color: #fe5555;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
 
-  img {
-    display: block;
-    width: 150px;
-    margin: 0px auto;
-  }
+    img {
+        display: block;
+        width: 150px;
+        margin: 0px auto;
+    }
 
-  p {
-    margin: auto;
-    max-width: 85%;
-  }
+    p {
+        margin: auto;
+        max-width: 85%;
+    }
 }

@@ -2,48 +2,48 @@ $circle-dimensions: 23px;
 $circle-spacing: 10px;
 
 .navbar {
-  position: sticky;
-  width: 100%;
-  top: 0;
-  padding-bottom: 10px 0;
-  z-index: 1000;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    padding: 20px 0;
+    z-index: 1000;
 
-  nav {
-    font-family: 'Avenir';
-    max-width: 90px;
-    font-size: 1.5em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    nav {
+        font-family: 'Avenir';
+        max-width: 90px;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
-    .circle {
-      margin: 10px 0;
-      display: block;
-      border-radius: 100px;
-      border: 2px solid#fe5555;
-      width: $circle-dimensions;
-      height: $circle-dimensions;
-      // background-color: white;
-      box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
-      transition-property: border;
-      transition-duration: 4s;
-      transition-delay: 2s;
+        .circle {
+            margin: 10px 0;
+            display: block;
+            border-radius: 100px;
+            border: 2px solid#fe5555;
+            width: $circle-dimensions;
+            height: $circle-dimensions;
+            // background-color: white;
+            box-shadow: 0 30px 30px rgba(0, 0, 0, 0.068);
+            transition-property: border;
+            transition-duration: 4s;
+            transition-delay: 2s;
+        }
+
+        .one {
+            margin-left: $circle-spacing;
+            margin-right: 3px;
+        }
+
+        .two {
+            margin-right: $circle-spacing;
+        }
+
+        .toggled {
+            border: 12px solid #fe5555;
+            transition-property: border;
+            transition-duration: 4s;
+            transition-delay: 2s;
+        }
     }
-
-    .one {
-      margin-left: $circle-spacing;
-      margin-right: 3px;
-    }
-
-    .two {
-      margin-right: $circle-spacing;
-    }
-
-    .toggled {
-      border: 12px solid #fe5555;
-      transition-property: border;
-      transition-duration: 4s;
-      transition-delay: 2s;
-    }
-  }
 }
