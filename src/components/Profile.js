@@ -34,13 +34,9 @@ const Profile = () => {
                 <h2>{data.jobTitle}</h2>
                 <SocialLinks />
                 <p>
-                    Hi I'm Brent I'm a Full Stack Web Developer and Designer in
-                    Raleigh North Carolina. When I'm not coding I'm either
-                    making music or chasing down hard to find retro items.
-                </p>
-                <p style={{ color: '#fe5555' }}>
-                    This site is currently in active development so expect rough
-                    edges while I'm working on it.
+                    Hi I'm Brent I'm a Software Engineer and Designer in Raleigh
+                    North Carolina. I'm the creator and maintainer of FormKey &
+                    Form an open source music language.
                 </p>
             </div>
         </div>

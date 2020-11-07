@@ -3,13 +3,14 @@ module.exports = {
     siteMetadata: {
         title: `coming soon`,
         author: `Brent Brinkley`,
-        jobTitle: `Full Stack Engineer`,
+        jobTitle: `Software Engineer`,
         description: `updated fancy personal site`,
         siteUrl: `https://www.brentbrinkley.com/`,
         github: `https://github.com/brentbrinkley`,
-        twitter: `https://twitter.com/16bitSensei`,
+        twitter: `https://twitter.com/EchelonIsBack`,
         linkedin: `https://www.linkedin.com/in/brent-brinkley-21932435/`,
         technologies: [
+            ['SwiftUI', 'orange'],
             ['JavaScript', 'gold'],
             ['Python', 'green'],
             ['Clojure', 'lightgreen'],
